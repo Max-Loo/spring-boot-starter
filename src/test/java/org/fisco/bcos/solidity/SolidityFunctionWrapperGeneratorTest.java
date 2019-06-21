@@ -13,6 +13,7 @@ import org.apache.commons.io.FileUtils;
 import org.fisco.bcos.web3j.codegen.SolidityFunctionWrapperGenerator;
 import org.fisco.bcos.web3j.solidity.compiler.CompilationResult;
 import org.fisco.bcos.web3j.solidity.compiler.SolidityCompiler;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.core.io.ClassPathResource;
 
@@ -25,6 +26,7 @@ public class SolidityFunctionWrapperGeneratorTest  {
     protected String packageName =  "org.fisco.bcos.solidity";
 
 
+    @Ignore
     @Test
     public void generateClassFromABIForHelloWorld() throws Exception {
 
@@ -40,6 +42,7 @@ public class SolidityFunctionWrapperGeneratorTest  {
 
 
 
+    @Ignore
     @Test
     public void compileSolFilesToJavaTest() throws IOException {
         File solFileList = new File("src/test/resources/contract");
